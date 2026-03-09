@@ -2,7 +2,7 @@
 
 ## Summary
 
-Portfolio RAG Assistant is a public-facing AI feature built for a technical portfolio website. A visitor can describe a project or problem, and the assistant returns a short fit assessment based on relevant portfolio context.
+Portfolio AI Agent is a public-facing AI feature built for a portfolio website. A visitor can describe a project or problem, and the agent returns a short answer about fit based on relevant portfolio context.
 
 The project is designed to answer one narrow question well:
 
@@ -10,15 +10,15 @@ The project is designed to answer one narrow question well:
 
 ## Problem
 
-Traditional portfolio sites often require a recruiter or hiring manager to manually browse projects and infer relevance. That is slow, especially when the visitor has a specific problem in mind but does not know which project best represents the required skill set.
+Traditional portfolio sites often make the visitor browse several projects and guess which one is most relevant. That is slow, especially when a recruiter or hiring manager has a specific problem in mind but does not know which project best represents the needed skill set.
 
 ## Solution
 
-This assistant adds a retrieval-based layer on top of portfolio content:
+This assistant adds a smarter search-and-answer layer on top of portfolio content:
 
 1. The visitor describes a project brief.
-2. The system retrieves the closest relevant portfolio entries.
-3. The model generates a concise answer grounded in that retrieved context.
+2. The system finds the closest relevant project and experience summaries.
+3. The model writes a short answer based on that information.
 4. The interface surfaces the most relevant GitHub work when appropriate.
 
 ## Design Goals
@@ -32,12 +32,12 @@ This assistant adds a retrieval-based layer on top of portfolio content:
 
 ## What Makes It Interesting
 
-- practical RAG use case tied to a real website
-- vector retrieval over portfolio experience and project summaries
-- hybrid reranking rather than naive top-k retrieval alone
-- safety and privacy constraints designed for a public portfolio
-- clear user value: faster project discovery and relevance matching
+- practical AI use case tied to a real website
+- smarter matching between user intent and portfolio content
+- clear user value: faster project discovery and easier relevance matching
+- privacy and safety constraints designed for a public portfolio
+- useful to both technical and non-technical visitors
 
 ## Outcome
 
-The project turns a static portfolio into an interactive discovery experience. Instead of forcing users to guess which project matters, the assistant helps connect project intent to relevant work in a controlled way.
+The project turns a static portfolio into an interactive discovery experience. Instead of forcing users to guess which project matters, the assistant helps connect a real business or technical need to the most relevant work in a controlled way.

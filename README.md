@@ -1,10 +1,12 @@
-# Portfolio RAG Assistant
+# Portfolio AI Agent
 
-Cloudflare-based retrieval-augmented assistant that matches project briefs to relevant portfolio work and anonymized experience.
+Live website: [tashfeenahmed.org](https://tashfeenahmed.org)
+
+RAG-based AI agent for a portfolio website that reads a project brief, checks whether it is a fit, and points to the most relevant work.
 
 ## Overview
 
-Portfolio RAG Assistant is a focused AI assistant designed for a technical portfolio website. Instead of acting like a general chatbot, it evaluates whether a project brief aligns with relevant experience, surfaces the closest GitHub work, and responds with short, privacy-safe answers.
+Portfolio AI Agent is a focused AI feature built for a portfolio website. Instead of acting like a general chatbot, it looks at a user's project brief, checks whether the work is a fit, surfaces the closest GitHub projects, and replies with a short, privacy-safe answer.
 
 This repository is intentionally documentation-only. It describes the project without exposing implementation code, deployment secrets, or personal information.
 
@@ -19,31 +21,31 @@ This repository is intentionally documentation-only. It describes the project wi
 
 ## Why This Project Matters
 
-This project shows applied GenAI in a practical setting:
+This project shows how AI can make a portfolio more useful:
 
-- retrieval-augmented generation for a real user workflow
-- semantic matching between user intent and portfolio content
-- production-minded prompt design and response constraints
-- privacy guardrails for public-facing AI experiences
-- Cloudflare-native deployment design using managed AI and vector search
+- it helps recruiters and hiring managers find relevant work faster
+- it connects vague project briefs to concrete portfolio examples
+- it keeps answers short, controlled, and easy to read
+- it avoids exposing personal information
+- it is built for a real website, not just a demo
 
 ## Core Features
 
 ### RAG-based retrieval
 
-User prompts are matched against a structured portfolio knowledge base rather than answered from model memory alone.
+The assistant looks up relevant portfolio context before answering, so the response is grounded in real project and experience summaries.
 
 ### Hybrid ranking
 
-Semantic retrieval is supported by lexical ranking and service-area signals to improve performance on short prompts, synonyms, and mixed phrasing.
+The matching logic is designed to work even when the user writes a short prompt, uses different wording, or mixes a greeting with a project request.
 
 ### Guardrails
 
-The assistant is constrained to portfolio-relevant questions and avoids exposing private details or responding to harmful requests.
+The assistant stays focused on portfolio-related questions and avoids exposing private details or answering harmful requests.
 
 ### Concise response design
 
-Answers are intentionally short so they work well inside a recruiter-facing website section.
+Answers are intentionally short so they are easy to read inside a recruiter-facing website.
 
 ## Example Use Cases
 
@@ -59,8 +61,8 @@ Answers are intentionally short so they work well inside a recruiter-facing webs
 - Cloudflare Workers AI
 - Cloudflare Vectorize
 - JavaScript
-- Retrieval-Augmented Generation
-- Prompt guardrails and response normalization
+- Retrieval-Augmented Generation (RAG)
+- Prompt guardrails and response cleanup
 
 ## Repository Contents
 
@@ -73,4 +75,4 @@ Answers are intentionally short so they work well inside a recruiter-facing webs
 
 - This repo intentionally excludes implementation code.
 - This repo intentionally excludes personal contact details, employer details, and deployment secrets.
-- The goal is to present the project clearly to recruiters and reviewers.
+- The goal is to explain the project clearly to recruiters, hiring managers, and non-technical readers.

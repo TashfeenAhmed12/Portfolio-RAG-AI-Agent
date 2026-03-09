@@ -1,22 +1,24 @@
 # Architecture
 
+This page explains the system in plain language.
+
 ## High-Level Flow
 
-1. Portfolio content is converted into a structured knowledge base.
-2. Each knowledge entry is embedded using an embedding model.
-3. Embeddings are stored in a vector index.
+1. Portfolio content is turned into a structured library of project and experience summaries.
+2. That library is converted into a search-friendly format.
+3. The search data is stored in a vector index.
 4. A user submits a project brief through the portfolio website.
-5. The user brief is embedded at request time.
-6. Vector retrieval returns the closest matching entries.
-7. Hybrid reranking refines the retrieved set.
-8. An LLM generates a short final answer using only the retrieved context.
+5. The user brief is converted into the same format.
+6. The system finds the closest matching entries.
+7. A ranking step improves the match quality.
+8. An LLM writes a short final answer using only that retrieved context.
 9. The website displays the fit assessment and relevant GitHub links.
 
 ## Main Components
 
 ### Portfolio context layer
 
-The assistant relies on a curated portfolio knowledge base containing:
+The assistant relies on a curated portfolio library containing:
 
 - project summaries
 - subproject descriptions
@@ -26,15 +28,15 @@ The assistant relies on a curated portfolio knowledge base containing:
 
 ### Embedding layer
 
-Each knowledge entry is converted into a vector representation so semantically related prompts can be matched even when they do not use the exact same wording.
+Each portfolio entry is converted into a format that helps the system find similar meaning, even when the user does not use the exact same wording.
 
 ### Vector retrieval layer
 
-A vector index stores the embedded portfolio entries and returns the closest matches for a given prompt.
+A vector index stores the portfolio entries and returns the closest matches for a given prompt.
 
 ### Reranking layer
 
-Semantic retrieval is supplemented with lexical and service-area signals to improve quality for:
+The first search results are refined to improve quality for:
 
 - short prompts
 - synonym-heavy prompts
@@ -68,7 +70,7 @@ It is designed to:
 RAG is a better fit than a general chatbot for this use case because:
 
 - it grounds answers in real portfolio evidence
-- it reduces hallucinated claims
+- it reduces made-up claims
 - it improves project recommendation quality
 - it keeps the assistant aligned with a narrow public-facing purpose
 
@@ -81,4 +83,4 @@ The project is designed around Cloudflare-native services:
 - vector search
 - lightweight deployment for a portfolio site
 
-This makes it a practical example of deploying an AI assistant for a real web product rather than only building a local prototype.
+This makes it a practical example of deploying an AI assistant for a real web product rather than only building a local demo.
