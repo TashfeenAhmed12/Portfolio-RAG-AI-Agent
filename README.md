@@ -68,8 +68,6 @@ Answers are intentionally short so they are easy to read inside a recruiter-faci
 
 - [PROJECT_OVERVIEW.md](./PROJECT_OVERVIEW.md)
 - [ARCHITECTURE.md](./ARCHITECTURE.md)
-- [SCREENSHOT_NOTES.md](./SCREENSHOT_NOTES.md)
-- [WEBSITE_COPY.md](./WEBSITE_COPY.md)
 
 ## Notes
 
