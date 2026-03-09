@@ -62,10 +62,18 @@ Answers are intentionally short so they are easy to read inside a recruiter-faci
 
 - Cloudflare Pages Functions
 - Cloudflare Workers AI
-- Cloudflare Vectorize
+- Cloudflare Vectorize for vector storage and similarity search
 - JavaScript
 - Retrieval-Augmented Generation (RAG)
 - Prompt guardrails and response cleanup
+
+## Implementation Notes
+
+- LLM used for final answers: `@cf/meta/llama-3.2-3b-instruct`
+- Embedding model used for retrieval: `@cf/baai/bge-small-en-v1.5`
+- Vector database / vector index: `Cloudflare Vectorize`
+
+In simple terms, the system stores portfolio summaries in Cloudflare Vectorize, converts a user prompt into an embedding, finds the closest matches, and then asks the LLM to answer using that retrieved context.
 
 ## Repository Contents
 

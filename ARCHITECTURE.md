@@ -30,9 +30,19 @@ The assistant relies on a curated portfolio library containing:
 
 Each portfolio entry is converted into a format that helps the system find similar meaning, even when the user does not use the exact same wording.
 
+In this project, the embedding model is:
+
+- `@cf/baai/bge-small-en-v1.5`
+
 ### Vector retrieval layer
 
 A vector index stores the portfolio entries and returns the closest matches for a given prompt.
+
+In this project, the vector index is:
+
+- `Cloudflare Vectorize`
+
+You can think of this as the vector database layer. It stores the embedded portfolio entries and makes semantic search possible.
 
 ### Reranking layer
 
@@ -52,6 +62,10 @@ The final answer is produced by an LLM that receives:
 - fit and privacy instructions
 
 The model is constrained to produce short, professional, portfolio-safe responses.
+
+In this project, the answer model is:
+
+- `@cf/meta/llama-3.2-3b-instruct`
 
 ## Guardrails
 
