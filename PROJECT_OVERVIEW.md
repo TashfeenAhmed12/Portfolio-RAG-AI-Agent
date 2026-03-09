@@ -2,7 +2,9 @@
 
 ## Summary
 
-Portfolio AI Agent is a public-facing AI feature built for a portfolio website. A visitor can describe a project or problem, and the agent returns a short answer about fit based on relevant portfolio context.
+Portfolio AI Agent is a public-facing AI feature I built for my own portfolio website. A visitor can describe a project or problem, and the agent returns a short answer about fit based on relevant portfolio context.
+
+The idea was simple: instead of asking people to click through projects and figure everything out themselves, I wanted the portfolio to help them find the right work faster.
 
 The project is designed to answer one narrow question well:
 
@@ -11,6 +13,8 @@ The project is designed to answer one narrow question well:
 ## Problem
 
 Traditional portfolio sites often make the visitor browse several projects and guess which one is most relevant. That is slow, especially when a recruiter or hiring manager has a specific problem in mind but does not know which project best represents the needed skill set.
+
+That friction felt especially obvious on a portfolio with work across analytics, BI, data engineering, machine learning, and GenAI. A static list can show breadth, but it does not help a visitor quickly connect a specific problem to the right example.
 
 ## Solution
 
@@ -41,3 +45,5 @@ This assistant adds a smarter search-and-answer layer on top of portfolio conten
 ## Outcome
 
 The project turns a static portfolio into an interactive discovery experience. Instead of forcing users to guess which project matters, the assistant helps connect a real business or technical need to the most relevant work in a controlled way.
+
+That makes the portfolio feel more personal, more useful, and more memorable while still staying concise and professional.

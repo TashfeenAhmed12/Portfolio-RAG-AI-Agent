@@ -2,11 +2,13 @@
 
 Live website: [tashfeenahmed.org](https://tashfeenahmed.org)
 
-RAG-based AI agent for a portfolio website that reads a project brief, checks whether it is a fit, and points to the most relevant work.
+RAG-based AI agent built for my own portfolio site to help visitors understand what I do, how I think, and which projects are most relevant to their problem.
 
 ## Overview
 
-Portfolio AI Agent is a focused AI feature built for a portfolio website. Instead of acting like a general chatbot, it looks at a user's project brief, checks whether the work is a fit, surfaces the closest GitHub projects, and replies with a short, privacy-safe answer.
+Portfolio AI Agent is a focused AI feature I built for my own portfolio website. Instead of making visitors scroll through projects and guess what is relevant, it lets them describe a problem and get a short, grounded answer about fit, skills, and related work.
+
+It is meant to feel like a smarter front door to the portfolio: more interactive than a static project list, but more controlled and useful than a general chatbot.
 
 This repository is intentionally documentation-only. It describes the project without exposing implementation code, deployment secrets, or personal information.
 
@@ -23,6 +25,7 @@ This repository is intentionally documentation-only. It describes the project wi
 
 This project shows how AI can make a portfolio more useful:
 
+- it turns a personal portfolio into an interactive project discovery experience
 - it helps recruiters and hiring managers find relevant work faster
 - it connects vague project briefs to concrete portfolio examples
 - it keeps answers short, controlled, and easy to read
